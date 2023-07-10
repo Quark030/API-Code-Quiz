@@ -12,3 +12,5 @@ https://github.com/Quark030/API-Code-Quiz.git
 
 
 Here is the link to the deployed website:
+
+https://quark030.github.io/API-Code-Quiz/
