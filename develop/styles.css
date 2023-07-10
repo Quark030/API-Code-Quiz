@@ -1,0 +1,143 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded;
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 20% );
+}
+
+body.correct {
+  background-color: rgb(38, 179, 38);
+}
+
+body.wrong {
+  background-color: rgb(142, 11, 27);
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.6); ;
+}
+
+.btn-grid {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 2px solid rgb(83, 142, 221);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: rgb(162, 15, 194);
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: rgb(255, 255, 255);
+  border: 2px solid hsl(117, 71%, 41%);
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+  border: 2px solid hsl(0, 100%, 50%);
+}
+
+.start-btn{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+#indications {
+  --hue: var(--hue-neutral);
+  border: 2px solid rgb(188, 20, 179);
+  background-color: darkmagenta;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.indications-small {
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-content: center;
+  
+}
+.next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+#question {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  background-color: darkmagenta;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#time {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(139, 29, 139);
+  border-radius: 5px;
+  width: 130px;
+  max-width: 80%;
+  text-align: center; /* Cambiado a 'center' */
+  white-space: nowrap; /* Evita el ajuste automático de líneas */
+  
+}
+
+#user-form-container {
+  color: rgb(255, 255, 255);
+  background-color: darkmagenta;
+  border-radius: 5px;
+  width: 800px;
+  max-width: 80%;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+
